@@ -1,8 +1,8 @@
-package com.ejada.dms.controllers;
+package com.dms.controllers;
 
+import com.dms.services.CmisDocumentService;
 import com.ejada.commons.errors.exceptions.ErrorCodeException;
 import com.ejada.commons.logs.annotations.FailureQueueDescriptor;
-import com.ejada.dms.services.CmisDocumentService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -13,7 +13,7 @@ import com.emdha.pdfcore.text.pdf.codec.Base64;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.ejada.dms.constants.FailureQueues.DOWNLOAD_DOCUMENT_FAILURE_QUEUE;
+import static com.dms.constants.FailureQueues.DOWNLOAD_DOCUMENT_FAILURE_QUEUE;
 
 @RestController
 @RequestMapping("/dms")

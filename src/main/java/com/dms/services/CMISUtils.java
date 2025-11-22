@@ -1,4 +1,4 @@
-package com.ejada.dms.services;
+package com.dms.services;
 
 import com.ejada.commons.errors.exceptions.ErrorCodeException;
 import lombok.extern.slf4j.Slf4j;
