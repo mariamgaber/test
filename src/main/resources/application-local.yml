@@ -1,0 +1,44 @@
+# Application Level Variables:
+#==============================
+app:
+  log:
+    encode: '1'
+  preflow:
+    log:
+      encode: '1'
+      level: BOTH
+ibm:
+  mq:
+    channel: ADM.SVRCONN
+    connName: 10.11.1.120(11818)
+    connectionCert: false
+    host: 10.11.1.120
+    password: F!VtQH#M
+    port: 11818
+    prod: false
+    queueManager: TSPTPPLX01D
+    user: tsptpp
+jms:
+  queue:
+    audit: JMS.TWQ.Contract.Audit.Rq
+    dump: JMS.TWQ.Contract.Dump.Rq
+    notificationTopic: /
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: abc
+    password: 123
+    driver-class-name: org.h2.Driver
+    h2:
+      console:
+        enabled: true
+        path: /h2-console
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true

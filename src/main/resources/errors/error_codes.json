@@ -1,0 +1,157 @@
+{
+  "errorCodes": {
+    "SERVICE_NOT_FOUND": {
+      "httpCode": "E999999",
+      "httpMessage": "Service Not Found",
+      "moreInformation": {
+        "result": {
+          "message": "Service Not Found"
+        }
+      }
+    },
+    "SERVICE_UNAVAILABLE": {
+      "httpCode": "E999999",
+      "httpMessage": "Service Unavailable",
+      "moreInformation": {
+        "result": {
+          "message": "Service Unavailable"
+        }
+      }
+    },
+    "HTTP_MEDIA_TYPE_NOT_SUPPORTED": {
+      "httpCode": "E999999",
+      "httpMessage": "Http Media Type is not supported",
+      "moreInformation": {
+        "result": {
+          "message": "Http Media Type is not supported"
+        }
+      }
+    },
+    "PRE_FLOW_INITIALIZATION_ERROR": {
+      "httpCode": "E999999",
+      "httpMessage": "Preflow Initialization Error",
+      "moreInformation": {
+        "result": {
+          "message": "Preflow Initialization Error"
+        }
+      }
+    },
+    "HTTP_REQUEST_METHOD_NOT_ALLOWED": {
+      "httpCode": "E999999",
+      "httpMessage": "Http Method is not allowed",
+      "moreInformation": {
+        "result": {
+          "message": "Http Method is not allowed"
+        }
+      }
+    },
+    "INTERNAL_SERVER_ERROR": {
+      "httpCode": "E999999",
+      "httpMessage": "An Internal Server error has occurred. Please retry in 60 seconds",
+      "moreInformation": {
+        "result": {
+          "message": "An Internal Server error has occurred. Please retry in 60 seconds"
+        }
+      }
+    },
+    "GENERAL_API_ERROR": {
+      "httpCode": "E999999",
+      "httpMessage": "General API Error",
+      "moreInformation": {
+        "result": {
+          "message": "General API Error"
+        }
+      }
+    },
+    "INVALID_REQUEST_BODY": {
+      "httpCode": "E999999",
+      "httpMessage": "Invalid Request Body",
+      "moreInformation": {
+        "result": {
+          "message": "Invalid Request Body"
+        }
+      }
+    },
+    "CMIS_FAILED_CREATING_DOCUMENT": {
+      "httpCode": "E999998",
+      "httpMessage": "Bad Request",
+      "moreInformation": {
+        "result": {
+          "message": "Cmis failed to create document"
+        }
+      }
+    },
+    "UNEXPECTED_ERROR_CREATING_DOCUMENT": {
+      "httpCode": "E999998",
+      "httpMessage": "Bad Request",
+      "moreInformation": {
+        "result": {
+          "message": "failed creating document"
+        }
+      }
+    },
+    "FAILED_RETRIEVING_DOCUMENT": {
+      "httpCode": "E999998",
+      "httpMessage": "Bad Request",
+      "moreInformation": {
+        "result": {
+          "message": "Cmis failed retrieving document"
+        }
+      }
+    },
+    "UNEXPECTED_ERROR_RETRIEVING_DOCUMENT": {
+      "httpCode": "E999998",
+      "httpMessage": "Bad Request",
+      "moreInformation": {
+        "result": {
+          "message": "failed retrieving document"
+        }
+      }
+    },
+    "FAILED_CREATING_SESSION": {
+      "httpCode": "E999998",
+      "httpMessage": "Bad Request",
+      "moreInformation": {
+        "result": {
+          "message": "failed Creating document"
+        }
+      }
+    },
+    "FAILED_READING_FILE_CONTENT": {
+      "httpCode": "E999998",
+      "httpMessage": "Bad Request",
+      "moreInformation": {
+        "result": {
+          "message": "failed reading document"
+        }
+      }
+    },
+    "FILE_NOT_FOUND": {
+      "httpCode": "E999998",
+      "httpMessage": "Bad Request",
+      "moreInformation": {
+        "result": {
+          "message": "file not found"
+        }
+      }
+    },
+    "FAILED_WRITING_FILE": {
+      "httpCode": "E999998",
+      "httpMessage": "Bad Request",
+      "moreInformation": {
+        "result": {
+          "message": "failed writing document"
+        }
+      }
+    },
+    "NO_CONTENT_STREAM_AVAILABLE": {
+      "httpCode": "E999998",
+      "httpMessage": "Bad Request",
+      "moreInformation": {
+        "result": {
+          "message": "NO_CONTENT_STREAM_AVAILABLE"
+        }
+      }
+    }
+  }
+}

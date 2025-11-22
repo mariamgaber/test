@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: TWQ_SMART_CONTRACT_RW
+    password: TLzhuYuhm51mrf
+    url: jdbc:sqlserver://172.16.1.20:2866;databaseName=TWQ_SMART_CONTRACT;encrypt=true;trustServerCertificate=true
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: '10'
+          format_sql: 'true'
+          dialect: org.hibernate.dialect.SQLServerDialect
+    show-sql: 'false'
+    hibernate:
+        ddl-auto: none
+
+#ibm:
+#  mq:
+#    channel: ADM.SVRCONN
+#    connName: 10.11.1.120(11818)
+#    connectionCert: false
+#    host: 10.11.1.120
+#    password: F!VtQH#M
+#    port: 11818
+#    prod: false
+#    queueManager: TSPTPPLX01D
+#    user: tsptpp

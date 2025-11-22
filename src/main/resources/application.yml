@@ -1,0 +1,68 @@
+spring:
+  profiles:
+    active: sit
+  jms:
+    pub-sub-domain: true
+  artemis:
+    mode: embedded
+    embedded:
+      security-enabled: false
+server:
+  port: 8085
+# Swagger Configurations:
+#========================
+spring-doc:
+  packagesToScan: com.ejada.documentmanagement.controllers
+  error:
+    response:
+      path:
+        isJson: false
+# Error Codes & certificate & APP EndPoints Configurations:
+#=========================================================
+app:
+  config:
+    integration:
+      common:
+        error-code-path: errors/error_codes.json
+      backend:
+        keystore:
+          name: keystore/sit-apic.jks
+          password: 123456
+      documents:
+        base-uri: /v1/document-management
+        api:
+          upload: /upload
+          download: /download/{DocumentId}
+          remove: /remove/{documentId}
+          replace: /replace
+  log:
+    encode: '1'
+  preflow:
+    log:
+      encode: '1'
+      level: BOTH
+    auto:
+      initialize: true
+dms:
+  document:
+    userName: SVC_SmartContractSIT
+    password: 2G_Qb@64#oj#qU
+    repository: ALRajhiDevOS2
+    atomUrl: http://10.11.34.161:9081/openfncmis/atom11
+    url: http://10.11.34.161:9081/openfncmis/services?wsdl
+    path: /v1/document-management
+    bufferLength: 10240
+    folderPath: /SmartContract
+    document-class-symbolic-name: SmartContract
+
+aes:
+  algo:
+    name: aes
+secret:
+  key: 123456
+
+jms:
+  queue:
+    audit: JMS.TWQ.DocumentManagement.Audit.Rq
+    dump: JMS.TWQ.DocumentManagement.Dump.Rq
+    notificationTopic: /SCNotification

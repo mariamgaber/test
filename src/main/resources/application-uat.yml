@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: SVC_SC_UAT
+    password: MIOvo01ha2YU
+    url: jdbc:sqlserver://D4CONSUATDB2V:2433;databaseName=TWQ_SC_UAT;encrypt=true;trustServerCertificate=true
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: '10'
+          format_sql: 'true'
+          dialect: org.hibernate.dialect.SQLServerDialect
+    show-sql: 'false'
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.SQLServerDialect
+
+#ibm:
+#  mq:
+#    channel: ADM.SVRCONN
+#    connName: 10.11.1.120(11818)
+#    connectionCert: false
+#    host: 10.11.1.120
+#    password: F!VtQH#M
+#    port: 11818
+#    prod: false
+#    queueManager: TSPTPPLX01D
+#    user: tsptpp
+
+#spring:
+#  datasource:
+#    url: jdbc:h2:mem:testdb
+#    username: abc
+#    password: 123
+#    driver-class-name: org.h2.Driver
+#    h2:
+#      console:
+#        enabled: true
+#        path: /h2-console
+#    jpa:
+#      database-platform: org.hibernate.dialect.H2Dialect
+#      hibernate:
+#        ddl-auto: update

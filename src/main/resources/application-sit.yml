@@ -1,0 +1,52 @@
+spring:
+#  datasource:
+#    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#    username: SVC_SC_SIT
+#    password: H5JaJqRLszcG
+#    url: jdbc:sqlserver://D4CONSSITDB1V:2433;databaseName=TWQ_SC_SIT;encrypt=true;trustServerCertificate=true
+#  jpa:
+#    properties:
+#      hibernate:
+#        jdbc:
+#          batch_size: '10'
+#          format_sql: 'true'
+#          dialect: org.hibernate.dialect.SQLServerDialect
+#    show-sql: 'false'
+#    hibernate:
+#      ddl-auto: update
+#    database-platform: org.hibernate.dialect.SQLServerDialect
+dms:
+  document:
+    userName: SVC_SmartContractSIT
+    password: 2G_Qb@64#oj#qU
+    repository: ALRajhiDevOS2
+    url: http://10.11.34.161:9081/openfncmis/services?wsdl
+    path: /v1/document-management
+    bufferLength: 10240
+
+#ibm:
+#  mq:
+#    channel: ADM.SVRCONN
+#    connName: 10.11.1.120(11818)
+#    connectionCert: false
+#    host: 10.11.1.120
+#    password: F!VtQH#M
+#    port: 11818
+#    prod: false
+#    queueManager: TSPTPPLX01D
+#    user: tsptpp
+
+#spring:
+#  datasource:
+#    url: jdbc:h2:mem:testdb
+#    username: abc
+#    password: 123
+#    driver-class-name: org.h2.Driver
+#    h2:
+#      console:
+#        enabled: true
+#        path: /h2-console
+#    jpa:
+#      database-platform: org.hibernate.dialect.H2Dialect
+#      hibernate:
+#        ddl-auto: update

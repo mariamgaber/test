@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: SVC_SC_DEV
+    password: kqqWRsWRLo2N
+    url: jdbc:sqlserver://D4CONSDEVDB3V:2433;databaseName=TWQ_SC_DEV;encrypt=true;trustServerCertificate=true
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: '10'
+          format_sql: 'true'
+          dialect: org.hibernate.dialect.SQLServerDialect
+    show-sql: 'false'
+    hibernate:
+      ddl-auto: none
+
+#ibm:
+#  mq:
+#    channel: ADM.SVRCONN
+#    connName: 10.11.1.120(11818)
+#    connectionCert: false
+#    host: 10.11.1.120
+#    password: F!VtQH#M
+#    port: 11818
+#    prod: false
+#    queueManager: TSPTPPLX01D
+#    user: tsptpp
